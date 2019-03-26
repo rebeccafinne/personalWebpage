@@ -2,7 +2,7 @@ header{
   background-color: #BADEF9;
   opacity: 0.5;
   height: 75px;
-  position: fixed;
+  position: absolute;
   width: 100%;
 
 }
@@ -44,9 +44,12 @@ header{
 
 html, body {
 
-margin:0;
+  margin:0;
 
-padding:0;
+  padding:0;
+
+  scroll-behavior: smooth;
+
 
 
 
@@ -58,6 +61,7 @@ padding:0;
   padding-top: 200px;
   padding-left: 100px;
   font-family: myFirstFont;
+
 
 }
 
@@ -84,45 +88,69 @@ padding:0;
 
 p{
   width: auto;
-  margin-top: 75px;
-  margin-left: 100px;
-  margin-right: 100px;
   font-family: myFirstFont;
   font-size: 18px;
 
 }
 
-#title{
+a{
+  color: black;
+  text-decoration: none;
+
+}
+
+a:hover{
+  text-decoration: underline;
+
+}
+
+.infoAboutMe{
+  width: auto;
+  margin-top: 75px;
   margin-left: 100px;
-  font-size: 35px;
+  margin-right: 100px;
+  font-family: myFirstFont;
+  font-size: 18px;
+}
+
+.title{
+  margin-left: 100px;
+  font-size: 40px;
   margin-top: 50px;
   font-family: myFirstFont;
 }
 
-#subTitleRight{
+#graphical{
+  width: 50%;
+}
+
+.subTitleRight{
   margin-right: 100px;
-  font-size: 25px;
-  margin-top: 50px;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: myFirstFont;
-  width: 60%;
+  width: auto;
   display: block;
-  float: right;
-  clear: right;
+
 }
 
 
 .projectImgLeft{
-  width: 15%;
+  width: auto;
   margin-left: 100px;
   margin-top: 50px;
   margin-bottom: 50px;
-  display: block;
-  float: left;
-  clear: left;
+
+}
+
+#bachelor{
+  width: 30%;
+
 }
 
 .projectInfoRight{
-  width: 60%;
+  width: auto;
   margin-right: 100px;
   font-family: myFirstFont;
   font-size: 18px;
@@ -131,66 +159,137 @@ p{
   clear: right;
 }
 .projectOdd{
-  display: inline-block;
+  display: grid;
   width: 100%;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  grid-template-columns: 1fr 1fr [last];
 }
 
-#subTitleLeft{
+.subTitleLeft{
   margin-left: 100px;
-  font-size: 25px;
-  margin-top: 50px;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: myFirstFont;
-  width: 60%;
+  width: auto;
   display: block;
-  float: left;
-  clear: left;
+
 }
 
 
 .projectImgRight{
-  width: 15%;
+  width: auto;
   margin-right: 100px;
   margin-top: 50px;
   margin-bottom: 50px;
-  display: block;
-  float: right;
-  clear: right;
+}
+
+#impact{
+  width: 30%;
+
 }
 
 .projectInfoLeft{
-  width: 60%;
+  width: auto;
   margin-left: 100px;
   font-family: myFirstFont;
   font-size: 18px;
   display: block;
-  float: left;
-  clear: left;
+
 }
 .projectEven{
-  display: inline-block;
+  display: grid;
   width: 100%;
   justify-content: center;
   text-align: center;
+  align-items: center;
   background-color: #ECF6FF;
+  grid-template-columns: 1fr 1fr [last];
+
 }
 
+#crap{
+  width: 50%;
+}
+
+.portfolioPic{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 30%;
+
+}
 .portfolio{
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 footer{
   background-color: #ECF6FF;
-  height: 100px;
-  width: 100%;
-  margin-top: 0px;
   justify-content: center;
-  text-align: center;
+
 }
 
-#contact{
-  font-size: 25px;
+#flexContainer{
+  display: flex;
+  text-align: center;
+  height: auto;
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  align-items: center;
+  justify-content: center;
+  padding: 10vw;
+}
+
+#contactFooter{
+  font-size: 50px;
   font-family: myFirstFont;
-  margin-top: 0px;
+  margin: 0px;
+  width: 50%;
+  flex-basis: 50%;
+
+}
+
+#verticalLine{
+  align-self: stretch;
+  background-color: #000000;
+  width: 5px;
+  margin-bottom: 1vw;
+}
+
+.FooterContainer{
+  flex-basis: 50%;
+
+}
+
+#contactIcons{
+
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  width: 10rem;
+  margin: auto;
+  height: 2vw;
+}
+#email{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  width: 15rem;
+  margin: auto;
+  height: 1.5vw;
+
+}
+.fa{
+  width:30px;
+}
+.footerPics{
+  width: 30px;
+}
+
+.fa:hover{
+  color: #47647B;
+  
+
 }

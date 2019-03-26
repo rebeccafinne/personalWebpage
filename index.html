@@ -3,6 +3,8 @@
 
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <title>Rebecca Finne</title>
 
 
@@ -16,10 +18,10 @@
       </div>
 
       <div class="menuTitle">
-          <span id="about" style="padding:20px;">About Me </span>
-          <span id="portfolio" style="padding:20px">Portfolio</span>
+          <span id="about" style="padding:20px;"><a href="Rebecca_Finne_CV_eng.pdf">Resume</a> </span>
+          <span id="portfolio" style="padding:20px"><a href="#title">Portfolio</a></span>
           <!-- <span id="aboutHeader"><a href="about.html">About me</a></span> -->
-          <span id="contact" style="padding:20px">Contact</span>
+          <span id="contact" style="padding:20px"><a href="#contactFooter">Contact</a></span>
 
         </div>
 
@@ -34,28 +36,59 @@
     </div>
 
     <div class="info">
-      <div id="title"> Who am I? </div>
+      <div class="title"> Who am I? </div>
       <img id="profile" src="Pictures/beccis copy.png" >
 
-      <div id="text">
-        <p>My name is <b>Rebecca Finne</b>, I'm 23 years old and I'm a Software engineering student currently studying my master in
+      <div class="text">
+        <p class="infoAboutMe">My name is <b>Rebecca Finne</b>, I'm 24 years old and I'm a Software engineering student currently studying my master in
           Interaction Design at Chalmers University of Technology, in Gothenburg Sweden. I plan for my studies to be
           finished in the spring of 2020.
           <br> <br> What I dream about in my future job is to be able to, in some way,
            make a difference. It could be anything to end poverty to an individual having
             an easier everyday life though any product that I have been a part of creating and developing.
-             With my academical background this will be possible for me, by together with a team develop a great product.</p>
+             With my academical background this will be possible for me, by together with a team develop a great product.
+           <br><br>
+         Below you can see some of my projects that I have been a part of.</p>
       </div>
 
     </div>
 
-    <div class="Portfolio">
-      <div id="title">Portfolio</div>
+    <div class="Portfolio" id="portfolio">
+     <div class="title" id="title">Portfolio</div>
 
-      <div class="projectOdd">
-      <div id="subTitleRight">Bechelor's Thesis: A workout application with focus on user ecperience</div>
+     <div class="projectOdd">
+       <div class="text">
+     <div class="subTitleLeft">Room Booking System</div>
 
-      <img class=projectImgLeft src="Pictures/favorites.png">
+     <div class="projectInfoLeft">
+       <p>School project where I designed a room booking system for a university. The design consist
+         of two versions, one for teachers and one for students. For this design I followed a few
+         requrements. <br>
+         This is made in Sketch.</p>
+
+
+     </div>
+   </div>
+
+   <div class="projectImgRight">
+     <img id="graphical" class="portfolioPic" src="Pictures/Graphical_project.png">
+ </div>
+
+
+
+
+
+   </div>
+
+      <div class="projectEven">
+        <div class="projectImgLeft">
+          <img id="bachelor" class="portfolioPic" src="Pictures/favorites.png">
+
+        </div>
+      <div class="text">
+        <div class="subTitleRight">Bechelor's Thesis: A workout application with focus on user ecperience</div>
+
+
 
       <div class="projectInfoRight">
         <p>An application made in Android, called <b>BetterTogether</b>. The user do different workouts
@@ -64,13 +97,15 @@
          used was for example the data base Firebase, Sketch and XML.</p>
 
       </div>
+    </div>
+
+
 
     </div>
 
-    <div class="projectEven">
-    <div id="subTitleLeft">IMPACT</div>
-
-    <img class=projectImgRight src="Pictures/impact.png">
+    <div class="projectOdd">
+      <div class="text">
+    <div class="subTitleLeft">IMPACT</div>
 
     <div class="projectInfoLeft">
       <p>At the #MeToo hack in Gothenburg 2018, my team made an Android application
@@ -78,16 +113,91 @@
 
 
     </div>
+  </div>
+
+  <div class="projectImgRight">
+    <img id="impact" class="portfolioPic" src="Pictures/impact.png">
+</div>
+
 
 
 
 
   </div>
+
+  <div class="projectEven">
+
+    <div class="projectImgLeft">
+    <img id="svenscan" class="portfolioPic" src="Pictures/svenscan.png">
+    </div>
+    <div class="text">
+  <div class="subTitleRight">SvenScan</div>
+
+  <div class="projectInfoRight">
+    <p>An Android application for refugees learning Swedish. They scan a word with the
+    camera on the phone and a picture representing the word shows up and at the same time an audio of the word is played. </p>
+
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+  <div class="projectOdd">
+
+      <div class="text">
+        <div class="subTitleLeft">Chalmers Run and Play</div>
+
+
+
+      <div class="projectInfoLeft">
+        <p>A top down desktop application where the user plays a character and are supposed to catch animals.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="projectImgRight">
+      <img id="crap" class="portfolioPic" src="Pictures/crap.png">
+
+    </div>
+
+
+
+</div>
+
+
   </div>
 
   <footer>
+    <div id="flexContainer">
+    <p id="contactFooter">Contact me!</p>
+    <div id="verticalLine">  </div>
 
-    <p id="contact">Contact me!    |  </p>
+
+    <div class="FooterContainer">
+      <div id="contactIcons">
+      <a href="https://github.com/rebeccafinne" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/rebecca-finne/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
+      <p></p>
+
+
+      <p id="email">   <img class="footerPics" src="Pictures/mailLogo.png"> rebecca@finne.se <br> </p>
+
+  <p></p>
+
+
+
+  </div>
+
+</div>
 
   </footer>
 
