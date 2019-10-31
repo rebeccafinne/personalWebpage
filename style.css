@@ -184,7 +184,6 @@ a:hover {
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: #ecf6ff;
   grid-template-columns: 1fr 1fr [last];
 }
 
