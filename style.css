@@ -27,7 +27,7 @@ header {
   height: 400px;
   width: 100%;
   justify-content: center;
-  background-image: url(Pictures/DSC_0274-small.jpg);
+  background-image: url(Pictures/Front_page/DSC_0274-small.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -137,6 +137,7 @@ a:hover {
   display: block;
   float: right;
   clear: right;
+  padding-bottom: 1.5em
 }
 .projectOdd {
   display: grid;
@@ -174,6 +175,8 @@ a:hover {
   font-family: myFirstFont, Arial, Helvetica, sans-serif;
   font-size: 18px;
   display: block;
+  padding-bottom: 1.5em
+
 }
 .projectEven {
   display: grid;
@@ -267,8 +270,25 @@ footer {
 }
 
 hr{
-  border-width: 2px;
-  margin: 0px;
+  border-width: 1px;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 0em;
+  margin-bottom: 0em;
   color: #000000;
+}
+
+#learnMore{
+  padding: 0.3em;
+  border: solid;
+  border-width: 2px;
+  border-radius: 4px;
+
+}
+
+#learnMore:hover{
+  color: #47647b;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+
 }
